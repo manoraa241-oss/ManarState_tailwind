@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManarEstate - العقارات الفاخرة</title>
+    <!-- استدعاء Tailwind CSS الحديث -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 font-sans">
+
+    <!-- شريط التنقل -->
+    <nav class="bg-gray-900 shadow-sm sticky top-0 z-50 py-4 px-6 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-yellow-900"><i class="fa-solid fa-city me-2"></i>ManarEstate</h1>
+        <div class="space-x-4 space-x-reverse hidden md:flex font-medium text-white">
+            <a href="#" class="hover:text-blue-600">الرئيسية</a>
+            <a href="#" class="hover:text-blue-600">العقارات</a>
+            <a href="#" class="hover:text-blue-600">من نحن</a>
+            <a href="#" class="hover:text-blue-600">تواصل معنا</a>
+        </div>
+        <button class="bg-yellow-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">أضف عقارك</button>
+    </nav>
+
+    <!-- الهيرو سكشن -->
+    <header class="relative bg-yellow-900 text-white py-24 text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">اعثر على منزل أحلامك بكل سهولة</h2>
+            <p class="text-gray-300 mb-8">نقدم لك أرقى العقارات والشقق السكنية في أفضل المواقع الحصرية.</p>
+            <div class="bg-white p-3 rounded-xl shadow-lg flex flex-col md:flex-row gap-3">
+                <input type="text" placeholder="ابحث بالمدينة أو المنطقة..." class="flex-1 p-3 text-gray-800 rounded-lg border focus:outline-none">
+                <button class="bg-yellow-900 text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-bold transition">بحث الآن</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- قائمة العقارات -->
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <h3 class="text-2xl font-bold mb-8 text-gray-800">العقارات المميزة</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- عقار 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="text-blue-600 font-bold text-lg">$250,000</span>
+                    <h4 class="font-bold text-xl mt-1 mb-2">فيلا مودرن بحديقة واسعة</h4>
+                    <p class="text-gray-500 text-sm mb-4">4 غرف نوم • 3 حمامات • مساحة 300م</p>
+                    <button class="w-full bg-gray-100 text-blue-600 font-bold py-2 rounded-lg hover:bg-blue-600 hover:text-white transition">عرض التفاصيل</button>
+                </div>
+            </div>
+
+            <!-- عقار 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="text-blue-600 font-bold text-lg">$180,000</span>
+                    <h4 class="font-bold text-xl mt-1 mb-2">شقة إطلالة بحرية ساحرة</h4>
+                    <p class="text-gray-500 text-sm mb-4">3 غرف نوم • 2 حمامات • مساحة 180م</p>
+                    <button class="w-full bg-gray-100 text-blue-600 font-bold py-2 rounded-lg hover:bg-blue-600 hover:text-white transition">عرض التفاصيل</button>
+                </div>
+            </div>
+
+            <!-- عقار 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="text-blue-600 font-bold text-lg">$320,000</span>
+                    <h4 class="font-bold text-xl mt-1 mb-2">منزل ذكي بتصميم هندسي فاره</h4>
+                    <p class="text-gray-500 text-sm mb-4">5 غرف نوم • 4 حمامات • مساحة 400م</p>
+                    <button class="w-full bg-gray-100 text-blue-600 font-bold py-2 rounded-lg hover:bg-blue-600 hover:text-white transition">عرض التفاصيل</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>جميع الحقوق محفوظة&copy; 2026 ManarEstate</p>
+    </footer>
+</body>
+</html>
